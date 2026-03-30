@@ -27,6 +27,13 @@ Thumbs.db
 .claude/
 .agents/
 skills-lock.json
+.mcp.json
+
+# Development artifacts
+main.ipynb
+main.py
+package.json
+package-lock.json
 
 # Remotion video project
 video/node_modules/
