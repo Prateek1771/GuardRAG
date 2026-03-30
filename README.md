@@ -1,19 +1,11 @@
----
-title: RagGuardrail
-emoji: 🛡️
-colorFrom: blue
-colorTo: purple
-sdk: docker
-app_port: 7860
-pinned: false
----
-
 # GuardRAG — Enterprise RAG Chatbot with Guardrails
 
 An enterprise-grade Retrieval-Augmented Generation (RAG) chatbot with built-in compliance guardrails, multi-tenant architecture, role-based access control, and complete audit logging.
 
 **Live Demo:** [huggingface.co/spaces/prateek1771/RagGuardrail](https://huggingface.co/spaces/prateek1771/RagGuardrail)
-**Promo Video:** [[huggingface.co/spaces/prateek1771/RagGuardrail](https://youtu.be/GpaCrQy-3Rg)]([https://huggingface.co/spaces/prateek1771/RagGuardrail](https://youtu.be/GpaCrQy-3Rg))
+
+**Promo Video:** [https://youtu.be/GpaCrQy-3Rg](https://youtu.be/GpaCrQy-3Rg)
+
 **Demo Login:** `admin` / `demo123`
 
 ---
