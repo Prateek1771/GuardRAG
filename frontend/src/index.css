@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* IBM Blue scale */
+  --color-ibm-blue-10: #edf5ff;
+  --color-ibm-blue-20: #d0e2ff;
+  --color-ibm-blue-40: #78a9ff;
+  --color-ibm-blue-60: #0f62fe;
+  --color-ibm-blue-70: #0043ce;
+
+  /* UI Shell (sidebar) */
+  --color-shell-bg:              #161616;
+  --color-shell-01:              #262626;
+  --color-shell-02:              #393939;
+  --color-shell-text:            #f4f4f4;
+  --color-shell-text-secondary:  #c6c6c6;
+
+  /* Surfaces */
+  --color-ui-bg:            #f4f4f4;
+  --color-ui-01:            #ffffff;
+  --color-ui-02:            #f4f4f4;
+  --color-ui-03:            #e0e0e0;
+  --color-text-primary:     #161616;
+  --color-text-secondary:   #525252;
+  --color-text-placeholder: #a8a8a8;
+
+  /* Guardrail semantic colors */
+  --color-danger-10:   #fff1f1;
+  --color-danger-60:   #da1e28;
+  --color-warning-10:  #fcf4d6;
+  --color-warning-60:  #f1c21b;
+  --color-warning-text: #323232;
+  --color-caution-10:  #fff2e8;
+  --color-caution-60:  #ff832b;
+  --color-purple-10:   #f6f2ff;
+  --color-purple-60:   #8a3ffc;
+  --color-success-10:  #defbe6;
+  --color-success-60:  #198038;
+
+  /* Animation */
+  --animate-fade-in-up: fade-in-up 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'IBM Plex Sans', 'Inter', system-ui, -apple-system, sans-serif;
+    font-size: 0.875rem;
+    color: #161616;
+    background-color: #f4f4f4;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.2s, color 0.2s;
+  }
+
+  html.dark body {
+    background-color: #0d0d0d;
+    color: #f4f4f4;
+  }
+
+  h1, h2, h3, h4 {
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #c6c6c6;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}

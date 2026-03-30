@@ -1,0 +1,30 @@
+{
+  "name": "guardrail-promo-video",
+  "version": "0.1.0",
+  "description": "GuardRAG 45-second promotional video built with Remotion",
+  "scripts": {
+    "start": "npx remotion studio",
+    "render": "npx remotion render GuardRAGPromo out/guardrail-promo.mp4 --codec=h264",
+    "still": "npx remotion still GuardRAGPromo out/thumb.png --frame=60"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.237",
+    "@remotion/compositor-win32-x64-msvc": "^4.0.237",
+    "@remotion/google-fonts": "4.0.237",
+    "@remotion/licensing": "^4.0.237",
+    "@remotion/studio": "^4.0.237",
+    "@remotion/transitions": "4.0.237",
+    "@remotion/zod-types": "^4.0.237",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.237"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "typescript": "5.4.5"
+  },
+  "remotion": {
+    "entryPoint": "src/index.ts"
+  }
+}

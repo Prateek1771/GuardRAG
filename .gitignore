@@ -1,0 +1,37 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Environment secrets
+.env
+
+# Database
+backend/db/app.db
+
+# Node
+node_modules/
+frontend/dist/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude / dev tooling
+.claude/
+.agents/
+skills-lock.json
+
+# Remotion video project
+video/node_modules/
+video/out/
+
+# Large binary files (use HF xet storage separately if needed)
+frontend/public/guardrail-promo.mp4
+frontend/screenshots/*.png
